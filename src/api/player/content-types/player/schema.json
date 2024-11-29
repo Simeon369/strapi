@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "players",
+  "info": {
+    "singularName": "player",
+    "pluralName": "players",
+    "displayName": "Player",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "surname": {
+      "type": "string",
+      "required": true
+    },
+    "firstname": {
+      "type": "string",
+      "required": true
+    },
+    "age": {
+      "required": true,
+      "type": "biginteger"
+    },
+    "height": {
+      "type": "biginteger",
+      "required": true
+    },
+    "weight": {
+      "type": "biginteger"
+    },
+    "wingspan": {
+      "type": "biginteger",
+      "required": true
+    },
+    "potrait": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files",
+        "images"
+      ]
+    },
+    "position": {
+      "type": "json",
+      "required": true
+    }
+  }
+}
