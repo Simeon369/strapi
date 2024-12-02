@@ -20,32 +20,38 @@
       "type": "string",
       "required": true
     },
-    "age": {
-      "required": true,
-      "type": "biginteger"
+    "position": {
+      "type": "json",
+      "required": true
     },
     "height": {
-      "type": "biginteger",
+      "type": "json",
       "required": true
     },
     "weight": {
-      "type": "biginteger"
+      "type": "json",
+      "required": true
     },
     "wingspan": {
-      "type": "biginteger",
+      "type": "json",
       "required": true
     },
     "potrait": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
       "allowedTypes": [
         "files",
         "images"
-      ]
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     },
-    "position": {
-      "type": "json",
+    "landscape": {
+      "allowedTypes": [
+        "files",
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
       "required": true
     }
   }
