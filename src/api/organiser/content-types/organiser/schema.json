@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "organisers",
+  "info": {
+    "singularName": "organiser",
+    "pluralName": "organisers",
+    "displayName": "organiser"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "potrait": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone": {
+      "type": "biginteger",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "socialMedia": {
+      "type": "json",
+      "required": true
+    },
+    "about": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

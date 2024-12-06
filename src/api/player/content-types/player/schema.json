@@ -37,22 +37,31 @@
       "required": true
     },
     "potrait": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "files",
         "images"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
     },
     "landscape": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "files",
         "images"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
+    },
+    "age": {
+      "required": true,
+      "type": "biginteger"
+    },
+    "category": {
+      "type": "string",
+      "required": true,
+      "default": "academy"
     }
   }
 }
